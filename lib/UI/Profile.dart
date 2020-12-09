@@ -1,7 +1,7 @@
 import 'package:appcubook/Shared/Color.dart';
 import 'package:appcubook/UI/ChangePassword.dart';
-import 'package:appcubook/UI/Sale.dart';
 import 'package:appcubook/UI/SetProfile.dart';
+import 'package:appcubook/UI/ShowPrice.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -167,57 +167,57 @@ class _ProfileState extends State<Profile> {
                 ),
               ),
             ),
-            // InkWell(
-            //   onTap: () {
-            //     Navigator.of(context).push(
-            //       MaterialPageRoute(
-            //         builder: (BuildContext context) => Sale(),
-            //       ),
-            //     );
-            //   },
-            //   child: Container(
-            //     height: size.height * 0.08,
-            //     margin: EdgeInsets.only(top: size.height * 0.01),
-            //     padding: EdgeInsets.fromLTRB(
-            //       size.width * 0.05,
-            //       size.height * 0.015,
-            //       size.width * 0.05,
-            //       size.height * 0.01,
-            //     ),
-            //     decoration: BoxDecoration(
-            //       borderRadius: BorderRadius.circular(10),
-            //       color: Colors.white,
-            //     ),
-            //     child: Row(
-            //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //       children: [
-            //         Column(
-            //           crossAxisAlignment: CrossAxisAlignment.start,
-            //           children: [
-            //             Text(
-            //               "สรุปยอดขาย",
-            //               style: TextStyle(
-            //                 fontSize: size.height * 0.025,
-            //                 fontFamily: "Heavent",
-            //                 color: Colors.black,
-            //               ),
-            //             ),
-            //             Text(
-            //               "รายได้ของร้าน",
-            //               style: TextStyle(
-            //                 fontSize: size.height * 0.015,
-            //                 fontFamily: "Heavent",
-            //                 color: ColorTheme.pink,
-            //               ),
-            //             ),
-            //           ],
-            //         ),
-            //         Icon(Icons.arrow_forward,
-            //             size: size.width * 0.08, color: ColorTheme.pink),
-            //       ],
-            //     ),
-            //   ),
-            // ),
+            InkWell(
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => ShowPrice(),
+                  ),
+                );
+              },
+              child: Container(
+                height: size.height * 0.08,
+                margin: EdgeInsets.only(top: size.height * 0.01),
+                padding: EdgeInsets.fromLTRB(
+                  size.width * 0.05,
+                  size.height * 0.015,
+                  size.width * 0.05,
+                  size.height * 0.01,
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.white,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "รายละเอียดรายได้",
+                          style: TextStyle(
+                            fontSize: size.height * 0.025,
+                            fontFamily: "Heavent",
+                            color: Colors.black,
+                          ),
+                        ),
+                        Text(
+                          "การส่งพัสดุ",
+                          style: TextStyle(
+                            fontSize: size.height * 0.015,
+                            fontFamily: "Heavent",
+                            color: ColorTheme.pink,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Icon(Icons.arrow_forward,
+                        size: size.width * 0.08, color: ColorTheme.pink),
+                  ],
+                ),
+              ),
+            ),
             InkWell(
               onTap: () {},
               child: Container(
